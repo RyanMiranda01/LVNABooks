@@ -1,0 +1,25 @@
+create database historico_pessoal;
+use historico_pessoal;
+
+CREATE TABLE `livros_salvos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo_livro` varchar(215) NOT NULL,
+  `subtitulo_livro` varchar(150) DEFAULT NULL,
+  `autores_livro` varchar(60) DEFAULT NULL,
+  `paginas_livro` int(11) DEFAULT NULL,
+  `categoria_livro` varchar(60) DEFAULT NULL,
+  `avaliacao` int(11) DEFAULT NULL,
+  `numero_de_avaliacao` int(11) DEFAULT NULL,
+  `ano_de_publicacao` varchar(10) DEFAULT NULL,
+  `id_usuario` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_usuario` (`id_usuario`),
+  CONSTRAINT `fk_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+
+CREATE TABLE `usuario` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome_usuario` varchar(60) NOT NULL,
+  `senha_usuario` varchar(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
