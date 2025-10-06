@@ -236,15 +236,16 @@ public class Menus {
                             System.out.println("Livro não excluido!");
                         }
                     case 2:
-                        break;
+                       return;
                     default:
                         System.out.println("Resposta inválida!");
                         errado = true;
+                        s.nextLine();
                 }
             } catch (Exception e) {
                 System.out.println("Valor invalido! tente novamente");
-                errado = true;
                 s.nextLine();
+                errado = true;
             }
         }while(errado);
 
