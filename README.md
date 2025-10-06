@@ -47,7 +47,7 @@ Copiar código
 ## ⚙️ Como executar
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/LVNABooks.git
+   https://github.com/RyanMiranda01/LVNABooks.git
 2. Configure o banco de dados MySQL (script em /Controller/JDBC/SQLScript.txt).
 
 3. Compile e execute o projeto:
