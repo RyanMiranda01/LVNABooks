@@ -53,6 +53,6 @@ Configure o banco de dados MySQL (script em /Controller/JDBC/SQLScript.txt).
 Compile e execute o projeto:
  
 Copiar código:
-```bash
-mvn clean install
-java -jar target/lvnabooks.jar
+   ```bash
+   mvn clean install
+   java -jar target/lvnabooks.jar
