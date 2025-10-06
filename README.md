@@ -48,11 +48,11 @@ Copiar código
 1. Clone o repositório:
    ```bash
    git clone https://github.com/seu-usuario/LVNABooks.git
-Configure o banco de dados MySQL (script em /Controller/JDBC/SQLScript.txt).
+2. Configure o banco de dados MySQL (script em /Controller/JDBC/SQLScript.txt).
 
-Compile e execute o projeto:
- 
-Copiar código:
+3. Compile e execute o projeto:
+    
+   Copiar código:
    ```bash
    mvn clean install
    java -jar target/lvnabooks.jar
