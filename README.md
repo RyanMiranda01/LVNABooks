@@ -35,12 +35,12 @@ O projeto foi desenvolvido em **console (CLI)**, aplicando conceitos de **POO, J
 
 ├── Model/ Classes de domínio (Livro, Usuário, etc.)
 
+├── View/ Classe de interface
+
 ├── Repository/ Conexão com banco
 
 └── LvnaBooksApplication.java/ Main
 
-
-Copiar código
 
 ---
 
