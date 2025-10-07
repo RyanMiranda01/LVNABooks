@@ -235,6 +235,7 @@ public class Menus {
                         } else {
                             System.out.println("Livro não excluido!");
                         }
+                        break;
                     case 2:
                        return;
                     default:
