@@ -3,6 +3,7 @@ package LVNABooks.Controller.DAO;
 
 import LVNABooks.Controller.JDBC.Conect;
 import LVNABooks.Model.Usuario;
+import LVNABooks.View.Menus;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,6 +12,7 @@ import java.sql.ResultSet;
 public class UsuarioDAO {
     private Connection conn;
     private Usuario user;
+
 
     public UsuarioDAO() {
         this.conn = Conect.conexao();
@@ -31,7 +33,9 @@ public class UsuarioDAO {
                 System.out.println("\nSeja bem vindo: "  + rs.getString("nome_usuario"));
                 return false;
             }else{
+                Menus menu = new Menus();
                 System.out.println("Usuario nao encontrado, verifique Login e senha");
+                menu.menuIncial();
                 return true;
             }
 

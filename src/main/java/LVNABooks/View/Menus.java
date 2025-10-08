@@ -72,6 +72,7 @@ public class Menus {
             autorizado = usuarioDAO.consultarUsuario(login, senha);
             idUsuario = usuarioDAO.consultarUsuarioId(login, senha);
             System.out.println("---------------------------------\n");
+
         }while(autorizado);
 
     }
